@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<title>Clinical Data Manager</title>
+<% include ../../partials/header %>
+<link rel="stylesheet" type="text/css" href="/static/css/careers/careers.css">
+
+<div id="alert" class="alert alert-success" style="display: none; margin-top: 70px" role="alert">Thanks For Applying, We Will Contact You Soon</div>
+
+<section class="description">
+    <h1>Clinical Data Manager</h1>
+    <h3>Location: San Diego</h3>
+    <hr>
+    <div>
+        <h3>Qualifications</h3>
+        <ul>
+            <li>BS in biochemistry, cellular biology, or healthcare required</li>
+            <li>Strong interests in Oncology Cell and Gene Therapy </li>
+            <li>Quick learner, keen to details, quality oriented</li>
+            <li>Excellent written and verbal communication skills in both English and Chinese </li>
+            <li>Excellent in Microsoft Office</li>
+        </ul>
+        <h3>Benefits</h3>
+        <ul>
+            <li>full benefit package</li>
+            <li>H1B Sponsorship</li>
+        </ul>
+    </div>
+    <a type="button" class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#Modal0">Apply</a>
+    
+</section>
+
+     <div class="modal fade" id="Modal0" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <center><h4 class="modal-title" id="myModalLabel">Apply</h4></center>
+                  </div>
+                  <div class="modal-body">
+                    <form action="/careers/jobopenning/CDM" method="POST" enctype="multipart/form-data">
+                      <center><p> &nbsp;Your Contact Infomation </p></center>
+                      <hr>
+                      <input type="text" class="w-input" autofocus="true" maxlength="256" name="name" placeholder="Name" id="name"/>
+                      <input type="email" id="email" name="email" data-name="Email" placeholder="E-mail address" maxlength="256" required="" class="form-text-field w-input"/>
+                      <br>
+
+                      <center><p> &nbsp;Upload Your Resume</p></center>
+                      <hr>
+                      <input type="file" class="form-text-field w-input" maxlength="256" name="resume" data-name="Subject" placeholder="Subject" id="resume" required=""/>
+                      <br>
+
+                      <center><p> &nbsp;Additional Infomation</p></center>
+                      <hr>
+                      <textarea id="message" name="message" placeholder="Type your cover letter/message here" maxlength="5000" required="" data-name="Message" class="form-textarea w-input"></textarea>
+                      <center>
+                        
+                      <button type="submit" class="btn btn-default" id="submit" >Submit</button>
+                        
+                      <center>
+                      <!-- <input type="Submit"> -->
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+
+                  </div>
+              </div><!-- /.modal-content -->
+          </div><!-- /.modal -->
+      </div>
+
+
+
+<% include ../../partials/footer %>
+
+<script>
+    <% if (locals.alert === 'success') { %>
+        // const alert = $("#alert");
+        // alert.text("Successful!!!");
+        // alert.css("margin-top", "100px");
+        // alert.attr({"class": "alert alert-success", "role": "alert"});
+        $("#alert").css("display", "block");
+        setTimeout(() => {
+            $("#alert").css("display", "none");
+        }, 2500);
+    <% } %>
+
+    $("#submit").click((e) => {
+        // $("#submit").attr("class","progress");
+        // $("#submit-btn").html(`
+        //     <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+        //     <span class="sr-only">45% Complete</span>
+        //     </div> `);
+        $("#submit").text("processing...");
+    });
+</script>
+
+
+
+
+</html>

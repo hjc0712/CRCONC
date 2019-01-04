@@ -1,0 +1,160 @@
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px 0;
+}
+
+section:not(.hero):nth-child(even)  {
+	background-color: #f5f5f5;
+}
+
+.grid {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+hr {
+    filter: alpha(opacity=0,finishopacity=100,style=1);
+    width: 100%;
+    margin: auto;
+    color: #3f51b5;
+}
+
+section h3.title {
+	text-transform: capitalize;
+	font: bold 32px "Open Sans", sans-serif;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+section p {
+	line-height: 1.5;
+	padding: 0 50px 0 100px;
+}
+
+@media (max-width: 800px) {
+	section {
+		padding: 50px 20px;
+	}
+}
+
+h1{
+	margin-top: 10%;
+	text-align: center;
+}
+
+/*hero section*/
+.hero {
+	position: relative;
+	justify-content: center;
+	text-align: center;
+	height: 450px;
+	color: #fff;
+}
+
+.hero .background-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 450px;
+	background-size: cover;
+	z-index: -1;
+	/*background-color: #80a3db;*/
+}
+
+.hero-content-area {
+	/* opacity: 0; */
+	margin-top: 150px;
+	/* animation: 1s slidefade 1s forwards; */
+}
+
+.hero h1 {
+	font-family: Impact, Charcoal, sans-serif;
+	color: white;
+	font-size: 100px;
+	margin-top: 150px;
+	text-shadow: 4px 4px #CB7BCB;
+}
+
+.hero .gradient-mask {
+	background: linear-gradient(to top, rgba(255,255,255,1), rgba(255,255,255,0));
+	height: 30%;
+	position: absolute;
+	top: 70%;
+	transition: all 0.2s ease-in-out;
+	width: 100%;
+  }
+
+/* @keyframes slidefade {
+	100% {
+		opacity: 1;
+		margin: 0;
+	}
+} */
+
+/*mission section*/
+.mission{
+	width: 1000px;
+    font-size: 22px;
+	text-align: start;
+	margin: 0 auto;
+}
+
+.mission img{
+	width: 800px;
+	height: 600px;
+	margin: auto 100px;
+}
+
+/*guideline section*/
+.guideline p{
+	font-size: 18px;
+}
+
+/*crtm section*/
+.crtm{
+	font-size: 18px;
+}
+
+/*footer section*/
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #607d8b;
+	/* color: #fff; */
+	padding: 20px 0;
+}
+
+footer ul {
+	display: flex;
+}
+
+footer ul li {
+	margin-left: 16px;
+}
+
+footer p {
+	text-transform: uppercase;
+	font-size: 14px;
+	opacity: 0.6;
+	/*align-self: center;*/
+}
+
+@media (max-width: 1100px) {
+	footer {
+		flex-direction: column;
+	}
+
+	footer p {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	footer ul li {
+		margin: 0 8px;
+	}
+}

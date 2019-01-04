@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Regulatory</title>
+    <% include ../partials/header %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+	<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/external/bootstrap3.0.css"> 
+	<link rel="stylesheet" type="text/css" href="/static/css/main.css">
+	<!-- <link rel="stylesheet" type="text/css" href="/static/css/index/styles.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="/static/css/services/quality/styles.css"> -->
+    <link rel="stylesheet" type="text/css" href="/static/css/services/regulatory/styles.css">
+
+</head>
+<body>
+    
+ 
+
+    <center><h1>Regulatory</h1></center>
+    <!-- <center><h1>Quality</h1></center>
+    <center><hr></center>
+    <center><div>Put the End in Mind, Establish a Well Structured Quality Management System,<br> Master Control and Minimize the Potential Waste and Risks at Different Stages of Product Lifecycle. </div></center> -->
+    
+    <div class="jumbotron">
+      <h1>Regulatory</h1>
+      <p>IND / CTA / BLA / NDA eCTD Submission</p>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button" data-toggle="modal" data-target="#Modal0">Consulting</a></p>
+    </div>
+
+     <div class="modal fade" id="Modal0" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <center><h4 class="modal-title" id="myModalLabel">Contact Us</h4></center>
+                  </div>
+                  <div class="modal-body">
+                    <form action="/services/regulatory" method="POST">
+                      <input type="text" class="w-input" autofocus="true" maxlength="256" name="name" placeholder="Name" id="name"/>
+                      <input type="email" id="email" name="email" data-name="Email" placeholder="E-mail address" maxlength="256" required="" class="form-text-field w-input"/>
+                      <input type="text" class="form-text-field w-input" maxlength="256" name="subject" data-name="Subject" placeholder="Subject" id="subject" required=""/>
+                      <textarea id="message" name="message" placeholder="Type your message here" maxlength="5000" required="" data-name="Message" class="form-textarea w-input"></textarea>
+                      <center>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                      <center>
+                      <!-- <input type="Submit"> -->
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+
+                  </div>
+              </div><!-- /.modal-content -->
+          </div><!-- /.modal -->
+      </div>
+    
+
+    <!-- <section class="package">
+        <div class="package1">
+            
+            <ul>
+                <li>Clients in China/US</li>
+                <li>Audit Findings Review</li>
+                <li>CAPA Consulting</li>
+                <li>CAPA Development</li>
+                <li>CAPA Review</li>
+            </ul>
+        </div>
+        <div class="package2">
+            <h4>Gxp Independent Auditing</h4>
+            <p></p>
+        </div>
+    </section> -->
+
+<section class="quality">
+
+
+    <div class="row">
+
+
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="/static/img/services/reg2.jpg" height="267" width="472">
+          <center><h3>US/China IND</h3></center>
+          <div class="caption">
+            
+            <p>
+                <ul>
+                    <li>Gap Analysis</li>
+                    <li>Pre-/Pre-IND Briefing Package Preparation</li>
+                    <li>Pre-/Pre-IND Meeting Rehearsal</li>
+                    <li>Write/Review eCTD package</li>
+                    <li>CMC Data</li>
+                    <li>Non-Clinical Data</li>
+                    <li>Investigator Brochure</li>
+                    <li>Non-Clinical SEND </li>
+                    <li>FIM Clinical Trial Design</li>
+                    <li>FIM Clinical Trial Protocol</li>
+                    <!-- <li>IND eCTD Dossier Preparation</li> -->
+                    <!-- <li>IND eCTD Dossier QC Review</li> -->
+                    <li>US IND eCTD Dossier ESG Submission</li>
+                    <li>China IND CTD Submission</li>
+                    <li>US IND Annual Report eCTD Preparation</li>
+                    <li>US IND Annual Report eCTD ESG Submission</li>
+                </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="/static/img/services/reg1.jpg" height="267" width="472">
+          <center><h3>Regulatory Strategy</h3></center>
+          <div class="caption">
+            
+            <p>
+                <ul>
+                    <li>Candidate Character</li>
+                    <li>Competitive Landscape </li>
+                    <li>Regulatory Guidances</li>
+                    <li>Regulatory Pathway </li>
+                    <li>Clinical Strategy</li>
+                    <li>Go/No-Go Milestones</li>
+                    <li>Submission Waves</li>
+                    <li>CDS/Label Updates</li>
+                    <li>Advertising Validation</li>
+                    <li>Lifecycle Management</li>
+                    <li>Compassionate Usage</li>
+                </ul>
+            </p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="/static/img/services/reg3.jpg" height="267" width="472">
+          <center><h3>US/China NDA/BLA</h3></center>
+          <div class="caption">
+            
+            <p>
+                <ul>
+                    <li>Gap Analysis</li>
+                    <li>End-of-Phase-2 Briefing Package Preparation</li>
+                    <li>End-of-Phase-2 Meeting Rehearsal</li>
+                    <li>Write/Review eCTD package</li>
+                    <li>Module 1-5 Documents</li>
+                    <li>Clinical Summary</li>
+                    <li>Clinical Safety Summary</li>
+                    <li>Clinical Efficacy Summary</li>
+                    <li>Label/CDS</li>
+                    <li>Clinical Study Reports </li>
+                    <li>Clinical eSub Datasets</li>
+                    <li>eCTD Dossier Preparation</li>
+                    <li>eCTD Dossier QC Review</li>
+                    <li>eCTD Dossier Publishing </li>
+                    <li>eCTD Dossier ESG Submission</li>
+                </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</section>
+
+    
+
+
+
+    <!-- <section class="destinations">
+        
+        <ul class="grid">
+                <li class="small">
+                    <div class="items">Gxp Independent Auditing</div>
+                
+                    <div class="items2"> 
+                        <div class="item2text">
+                            <ul>
+                                <li>Clients in China/US</li>
+                                <li>Audit Findings Review</li>
+                                <li>CAPA Consulting</li>
+                                <li>CAPA Development</li>
+                                <li>CAPA Review</li>
+                            </ul>
+                        </div>
+                        <div class="item2picture">
+                            <img class="ssimg" src="/static/img/index/mountain2.jpg">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section> -->
+
+   <!--  <center><h1>Locations</h1></center>
+    <hr>
+	<section class="sd">
+        <ul class="grid">
+            <ul class="address">
+                <li><strong>San Diego</strong></li>
+                <li>8525 Camino Santa Fe, Suite E</li>
+                <li>San Diego, CA 92121</li>
+            </ul>
+            <li class="small" style="background-image: url(/static/img/index/CompanyName.jpg);"></li>
+            <li class="large" style="background-image: url(/static/img/index/mountain2.jpg);"></li>
+        </ul>
+    </section>
+    <hr>
+    <section class="bj">
+            <ul class="grid">
+                <ul class="address">
+                    <li><strong>Beijing</strong></li>
+                    <li>Beijing Airport Industrial Zone B District</li>
+                    <li>Twin Tower A 6th Floor Suite 611</li>
+                </ul>
+                <li class="small" style="background-image: url(/static/img/index/CompanyName.jpg);"></li>
+                <li class="large" style="background-image: url(/static/img/index/BeijingOffice.jpg);"></li>
+            </ul>
+        </section> -->
+    <% include ../partials/footer %>
+</body>
+</html>
