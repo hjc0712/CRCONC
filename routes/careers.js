@@ -71,7 +71,7 @@ router.post('/jobopenning/CDM', upload.single('resume'), (req, res, next) => {
 	  attachments:[ 
 	   { 
 	    filename : ejsname + '_CDM.pdf', 
-	    path: '/master/CRC/CRC_C/files/1.pdf'
+	    path: 'files/1.pdf'
 	   }, 
 	  ] 
 	 }; 
@@ -101,7 +101,7 @@ router.post('/jobopenning/CM', upload.single('resume'), (req, res, next) => {
 	  attachments:[ 
 	   { 
 	    filename : ejsname + '_CM.pdf', 
-	    path: '/master/CRC/CRC_C/files/1.pdf'
+	    path: 'files/1.pdf'
 	   }, 
 	  ] 
 	 }; 
@@ -131,7 +131,7 @@ router.post('/jobopenning/CTM', upload.single('resume'), (req, res, next) => {
 	  attachments:[ 
 	   { 
 	    filename : ejsname + '_CTM.pdf', 
-	    path: '/master/CRC/CRC_C/files/1.pdf'
+	    path: 'files/1.pdf'
 	   }, 
 	  ] 
 	 }; 
@@ -161,7 +161,7 @@ router.post('/jobopenning/EA', upload.single('resume'), (req, res, next) => {
 	  attachments:[ 
 	   { 
 	    filename : ejsname + '_EA.pdf', 
-	    path: '/master/CRC/CRC_C/files/1.pdf'
+	    path: 'files/1.pdf'
 	   }, 
 	  ] 
 	 }; 
@@ -191,7 +191,7 @@ router.post('/jobopenning/RAA', upload.single('resume'), (req, res, next) => {
 	  attachments:[ 
 	   { 
 	    filename : ejsname + '_RAA.pdf', 
-	    path: '/master/CRC/CRC_C/files/1.pdf'
+	    path: 'files/1.pdf'
 	   }, 
 	  ] 
 	 }; 
@@ -222,7 +222,7 @@ router.post('/jobopenning2', upload.single('resume'), (req, res, next) => {
 	  attachments:[ 
 	   { 
 	    filename : ejsname + '_' + jobtitle + ' Internship.pdf', 
-	    path: '/master/CRC/CRC_C/files/1.pdf'
+	    path: 'files/1.pdf'
 	   }, 
 	  ] 
 	 }; 
