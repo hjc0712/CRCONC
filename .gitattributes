@@ -1,0 +1,2 @@
+*.ejs linguist-language=javascript；
+*.css linguist-language=html；
