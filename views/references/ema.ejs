@@ -1,13 +1,16 @@
-<% include ../partials/header %>
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/head %>
+  <link rel="stylesheet" href="/static/css/references/main.css">
+  <link rel="stylesheet" href="/static/css/references/ema.css">
+<head>
 
-<link rel="stylesheet" href="/static/css/references/ema.css">
+<body>
+  <% include ../partials/navbar %>
+  <%- include("./partials/hero", {title: "EMA"}) %>
 
-  <div class="jumbotron" id="hero" style="height: 450px">
-    <h1 id="title">EMA</h1>
-    <div class="gradient-mask"></div>
-  </div>
-
-  <div class="container" id="ema">
+  <section class="container" id="ema">
     <div id="content" class="row">
       <div class="col-sm-3" id="sidebar">
         <div class="input-group input-group-lg searchbar">
@@ -30,11 +33,13 @@
       </div>
       <div class="col-sm-9">
         <div id="main-content">
-
         </div>
       </div>
     </div>
-  </div>
-
-<% include ../partials/footer %>
-<script src="/static/js/references/ema.js"></script>
+  </section>
+  
+  <% include ../partials/footer %>
+  <% include ../partials/scripts %>
+  <script src="/static/js/references/ema.js"></script>
+</body>
+</html>

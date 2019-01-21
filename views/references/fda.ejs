@@ -1,13 +1,16 @@
-<% include ../partials/header %>
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/head %>
+  <link rel="stylesheet" href="/static/css/references/main.css">
+  <link rel="stylesheet" href="/static/css/references/fda.css">
+<head>
 
-<link rel="stylesheet" href="/static/css/references/fda.css">
-  
-  <div class="jumbotron" id="hero" style="height: 450px">
-    <h1 id="title">FDA</h1>
-    <div class="gradient-mask"></div>
-  </div>
+<body>
+  <% include ../partials/navbar %>
+  <%- include("./partials/hero", {title: "FDA"}) %>
 
-  <div class="container" id="fda">
+  <section class="container" id="fda">
     <div id="content" class="row">
       <div class="col-sm-3" id="sidebar">
         <div class="input-group input-group-lg searchbar">
@@ -40,11 +43,13 @@
       </div>
       <div class="col-sm-9">
         <div id="main-content">
-
         </div>
       </div>
     </div>
-  </div>
-
-<% include ../partials/footer %>
-<script src="/static/js/references/fda.js"></script>
+  </section>
+  
+  <% include ../partials/footer %>
+  <% include ../partials/scripts %>
+  <script src="/static/js/references/fda.js"></script>
+</body>
+</html>

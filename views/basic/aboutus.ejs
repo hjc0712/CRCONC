@@ -1,56 +1,49 @@
-<title>About us</title>
-<link rel="stylesheet" type="text/css" href="/static/css/basic/aboutus.css">
-<% include ../partials/header%>
-<section class="hero">
-    <div class="background-image" style="background-position: center; background-image: url(/static/img/index/cell-tech-3.jpg);"></div>
-    <div class="hero-content-area">
-        <h1>About CRC</h1>
-    </div>
-    <div class="gradient-mask"></div>
-</section>
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/head %>
+  <link rel="stylesheet" href="/static/css/basic/main.css">
+  <link rel="stylesheet" href="/static/css/basic/aboutus.css">
+</head>
+<body>
+  <% include ../partials/navbar %>
+  <%- include("./partials/hero", {title: "About CRC"}); %>
 
 <section class="mission">
-    <img src="/static/img/index/Company1.jpg">
-    <h1>About us</h1>
-    <hr>
-    <p>CRC Oncology Corp is a contract research organization with a focus to promote the globalization of innovative drugs and therapies for cancer treatment, especially in the field of advanced cell and gene therapy. CRC Oncology’s services include aiding in the preparation of critical regulatory submission documents, managing the development of clinical trials, and bridging global quality standards.</p>
+    <img src="/static/img/index/Company1.jpg" class="office">
+    <div class="aboutus">
+        <h1>About us</h1>
+        <hr>
+        <p>CRC Oncology is a contract research organization with a focus to promote the globalization of innovative drugs and therapies for cancer treatment, especially in the field of advanced cell and gene therapy. CRC Oncology’s services include aiding in the preparation of critical regulatory submission documents, managing the development of clinical trials, and bridging global quality standards.</p>
+    </div>
+    
 </section>
 
-<section class="guideline">
-    <h1>TRADEMARK & COPYRIGHT GUIDELINES</h1>
-    <hr>
-    <p><br>CRC Oncology Corp Logo and service marks on this site and the websites of CRC Oncology Corp wholly owned subsidiary and events/trainings are the trademarks and service marks of CRC Oncology Corp., and may be registered in the U.S. Patent and Trademark Office and in other countries.</br>
-        <br>This site contains the trademarks and service marks of third parties and such trademarks. logos and service marks are the property of their respective owners. These marks may be registered and/or used in the U.S. and other countries around the world. These third-party marks are the property of the owner companies, respectively, and are registered and/or used in the U.S. and other countries around the world.</br>
-        <br>CRC Oncology Corp.</br>
-        <br>San Diego, CA 92130</br></p>
-</section>
-
-
-
-<section class="crtm">
+<!-- <section class="crtm">
     <div class="copyright">
         <p><strong>Copyright: </strong>All content on this web site, such as text, graphics, 
-        logos, button icons and images is the property of CRC Oncology Corp. or its 
+        logos, button icons and images is the property of CRC Oncology. or its 
         content suppliers and protected by United States and international copyright 
         laws. The selection, arrangement, and presentation of all materials on this 
         web site (including information in the public domain), and the overall 
-        design of this web site is the exclusive property of CRC Oncology Corp. 
+        design of this web site is the exclusive property of CRC Oncology. 
         and protected by United States and international copyright laws. All 
-        software on this site is the property of CRC Oncology Corp. or its software 
+        software on this site is the property of CRC Oncology. or its software 
         suppliers and protected by United States and international copyright laws.</p>
     </div>
     
     <div class="trademark">
         <p><strong>Trademarks: </strong>The graphics, logos, page headers, button icons, 
-            scripts and service names are trademarks or trade dress of CRC Oncology Corp. 
+            scripts and service names are trademarks or trade dress of CRC Oncology. 
             and such trademarks and trade dress may not be used in connection with any 
-            product or service of CRC Oncology Corp., in any manner that is likely to cause 
+            product or service of CRC Oncology., in any manner that is likely to cause 
             confusion among customers, or in any manner that disparages or discredits CRC 
-            Oncology Corp., its products or services or this web site. All other trademarks 
-            not owned by CRC Oncology Corp. that appear on this site are the property of 
+            Oncology., its products or services or this web site. All other trademarks 
+            not owned by CRC Oncology. that appear on this site are the property of 
             their respective owners, who may or may not be affiliated with, connected to, 
-            or sponsored by CRC Oncology Corp.</p>
+            or sponsored by CRC Oncology.</p>
     </div>
-</section>
+</section> -->
 
 <% include ../partials/footer%>
+<% include ../partials/scripts %>

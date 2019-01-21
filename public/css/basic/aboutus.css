@@ -34,9 +34,9 @@ section p {
 	padding: 0 50px 0 100px;
 }
 
-@media (max-width: 800px) {
-	section {
-		padding: 50px 20px;
+@media screen and (max-width: 768px) {
+	section p{
+		padding: 0 20px;
 	}
 }
 
@@ -50,8 +50,11 @@ h1{
 	position: relative;
 	justify-content: center;
 	text-align: center;
+	width: 100%;
 	height: 450px;
 	color: #fff;
+	padding-top: 70px;
+	transition: all 0.2s ease-in-out;
 }
 
 .hero .background-image {
@@ -76,17 +79,35 @@ h1{
 	color: white;
 	font-size: 100px;
 	margin-top: 150px;
-	text-shadow: 4px 4px #CB7BCB;
+	text-shadow: 4px 4px #653d6f;
 }
 
 .hero .gradient-mask {
 	background: linear-gradient(to top, rgba(255,255,255,1), rgba(255,255,255,0));
-	height: 30%;
+	height: 20%;
 	position: absolute;
-	top: 70%;
+	top: 80%;
 	transition: all 0.2s ease-in-out;
 	width: 100%;
   }
+
+@media screen and (max-width: 768px) {
+	.hero{
+		max-width: 768px;
+		width: 100%;
+    	text-align: center;
+	}
+
+	.hero image{
+		width: 100%;
+		height: auto;
+	}
+
+	.hero h1{
+		font-size: 45px;
+	}
+}
+
 
 /* @keyframes slidefade {
 	100% {
@@ -97,64 +118,41 @@ h1{
 
 /*mission section*/
 .mission{
-	width: 1000px;
+	width: 100%;
     font-size: 22px;
 	text-align: start;
 	margin: 0 auto;
 }
 
-.mission img{
-	width: 800px;
-	height: 600px;
-	margin: auto 100px;
+.mission .office{
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+	display: block;
 }
 
-/*guideline section*/
-.guideline p{
-	font-size: 18px;
-}
-
-/*crtm section*/
-.crtm{
-	font-size: 18px;
-}
-
-/*footer section*/
-footer {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	background-color: #607d8b;
-	/* color: #fff; */
-	padding: 20px 0;
-}
-
-footer ul {
-	display: flex;
-}
-
-footer ul li {
-	margin-left: 16px;
-}
-
-footer p {
-	text-transform: uppercase;
-	font-size: 14px;
-	opacity: 0.6;
-	/*align-self: center;*/
-}
-
-@media (max-width: 1100px) {
-	footer {
-		flex-direction: column;
+@media screen and (max-width: 768px) {
+	.mission{
+		max-width: 768px;
 	}
 
-	footer p {
-		text-align: center;
-		margin-bottom: 20px;
+	.mission .office{
+		width: 100%;
+		height: auto;
+		max-width: 768px;
 	}
 
-	footer ul li {
-		margin: 0 8px;
+	.mission div{
+		width: 100%;
+		height: auto;
+		max-width: 768px;
+	}
+	
+	.mission h1{
+		font-size: 30px;
+	}
+
+	.mission p{
+		font-size: 16px;
 	}
 }

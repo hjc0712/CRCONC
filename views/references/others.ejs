@@ -1,12 +1,16 @@
-<% include ../partials/header %>
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/head %>
+  <link rel="stylesheet" href="/static/css/references/main.css">
+  <link rel="stylesheet" href="/static/css/references/others.css">
+<head>
 
-<link rel="stylesheet" href="/static/css/references/others.css">
+<body>
+  <% include ../partials/navbar %>
+  <%- include("./partials/hero", {title: "NGO"}) %>
 
-  <div class="jumbotron" id="hero" style="height: 450px">
-    <h1 id="title">Others</h1>
-    <div class="gradient-mask"></div>
-  </div>
-  <div class="container" id="others">
+  <section class="container" id="others">
     <div id="content" class="row">
       <div class="col-sm-3" id="sidebar">
         <div class="list-group">
@@ -16,7 +20,7 @@
           <a id="iso" class="list-group-item">ISO</a>
           <a id="nih" class="list-group-item">NIH</a>  
           <a id="nci" class="list-group-item">NCI</a>
-          <a id="nccn" class="list-group-item">NCNN</a>
+          <a id="nccn" class="list-group-item">NCCN</a>
           <a id="rmat" class="list-group-item">RMAT</a>
           <a id="sec" class="list-group-item">SEC</a>
           <a id="wikipedia" class="list-group-item">Wikipedia</a>
@@ -25,11 +29,13 @@
       </div>
       <div class="col-sm-9">
         <div id="main-content">
-
         </div>
       </div>
     </div>
-  </div>
-
-<% include ../partials/footer %>
-<script src="/static/js/references/others.js"></script>
+  </section>
+  
+  <% include ../partials/footer %>
+  <% include ../partials/scripts %>
+  <script src="/static/js/references/others.js"></script>
+</body>
+</html>

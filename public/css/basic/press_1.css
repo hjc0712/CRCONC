@@ -1,5 +1,5 @@
 section {
-	display: flex;
+	/* display: flex; */
 	flex-direction: column;
 	align-items: center;
 	padding: 20px 0;
@@ -31,9 +31,9 @@ section h3.title {
 	text-align: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
 	section {
-		padding: 50px 20px;
+		padding: 50px 0;
 	}
 }
 
@@ -85,8 +85,17 @@ body {
 	color: white;
 	font-size: 100px;
 	margin-top: 150px;
-	text-shadow: 4px 4px #CB7BCB;
+	text-shadow: 4px 4px #653d6f;
 }
+
+.hero .gradient-mask {
+	background: linear-gradient(to top, rgba(255,255,255,1), rgba(255,255,255,0));
+	height: 20%;
+	position: absolute;
+	top: 80%;
+	transition: all 0.2s ease-in-out;
+	width: 100%;
+  }
 
 /*anouncement section*/
 .announcement{
@@ -108,4 +117,22 @@ body {
     line-height: 1.5;
 	font-size: 1.5em;
 	margin: 20px auto;
+}
+
+@media screen and (max-width: 768px) {
+	.announcement{
+		padding: 20px 10px;
+	}
+
+	.announcement h1{
+		font-size: 24px;
+		line-height: 1.0;
+	}
+
+	.announcement .time{
+		font-weight: bold;
+		line-height: 1.0;
+		font-size: 18px;
+		margin: 20px auto;
+	}
 }

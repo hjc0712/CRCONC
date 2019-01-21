@@ -2,16 +2,15 @@ const express = require('express'),
   router = express.Router();
   path = require('path');
 
-var nodemailer = require('nodemailer');
+const nodemailer = require('nodemailer');
 
-var transporter = nodemailer.createTransport({
+const transporter = nodemailer.createTransport({
   service: 'hotmail',
   auth: {
-	user: 'IT.Group@crconc.org',
-	pass: 'develop@CRC'
-	 }
-	});
-
+		user: 'IT.Group@crconc.org',
+		pass: 'develop@CRC'
+	}
+});
 
 router.get('/quality',(req,res) => {
   res.render('services/quality');
@@ -29,101 +28,27 @@ router.get('/business',(req,res) => {
   res.render('services/business');
 });
 
+router.post('/:id', (req, res) => {
+	const ejsname = req.body.name;
+  const ejsemail = req.body.email;
+  const ejssubject = req.body.subject;
+  const ejsmessage = req.body.message;
 
-router.post('/quality', (req, res) => {
-  var ejsname = req.body.name;
-  var ejsemail = req.body.email;
-  var ejssubject = req.body.subject;
-  var ejsmessage = req.body.message;
-
-  // console.log(req.body.name);
-	var mailOptions = {
-	  from: 'IT.Group@crconc.org',
-	  to: 'IT.Group@crconc.org',
-	  subject: 'Contact from '+ ejsname +'(about quality)',
-	  text: 'name: '+ejsname + '\n' +'email: ' + ejsemail + '\n' + 'subject: ' + ejssubject + '\n' +'message: ' + ejsmessage
+	const mailOptions = {
+		from: 'IT.Group@crconc.org',
+		to: ['Cindy.Ru@crconc.org', 'Brenda.Ngo@crconc.org'],
+		subject: `Contact from ${ejsname}(about ${req.params.id})`,
+		text: `name: ${ejsname}\nemail: ${ejsemail}\nsubject ${ejssubject}\nmessage: ${ejsmessage}`
 	};
+
 	transporter.sendMail(mailOptions, function(error, info){
 	  if (error) {
 	    console.log(error);
 	  } else {
 	    console.log('Email sent: ' + info.response);
-	    res.render('services/quality');
+	    res.render(`services/${req.params.id}`);
 	  }
 	});
 });
-
-router.post('/regulatory', (req, res) => {
-  var ejsname = req.body.name;
-  var ejsemail = req.body.email;
-  var ejssubject = req.body.subject;
-  var ejsmessage = req.body.message;
-
-  // console.log(req.body.name);
-	var mailOptions = {
-	  from: 'IT.Group@crconc.org',
-	  to: 'IT.Group@crconc.org',
-	  subject: 'Contact from '+ ejsname +'(about regulatory)',
-	  text: 'name: '+ejsname + '\n' +'email: ' + ejsemail + '\n' + 'subject: ' + ejssubject + '\n' +'message: ' + ejsmessage
-	};
-	transporter.sendMail(mailOptions, function(error, info){
-	  if (error) {
-	    console.log(error);
-	  } else {
-	    console.log('Email sent: ' + info.response);
-	    res.render('services/regulatory');
-	  }
-	});
-});
-
-router.post('/clinical', (req, res) => {
-  var ejsname = req.body.name;
-  var ejsemail = req.body.email;
-  var ejssubject = req.body.subject;
-  var ejsmessage = req.body.message;
-
-  // console.log(req.body.name);
-	var mailOptions = {
-	  from: 'IT.Group@crconc.org',
-	  to: 'IT.Group@crconc.org',
-	  subject: 'Contact from '+ ejsname +'(about clinical)',
-	  text: 'name: '+ejsname + '\n' +'email: ' + ejsemail + '\n' + 'subject: ' + ejssubject + '\n' +'message: ' + ejsmessage
-	};
-	transporter.sendMail(mailOptions, function(error, info){
-	  if (error) {
-	    console.log(error);
-	  } else {
-	    console.log('Email sent: ' + info.response);
-	    res.render('services/clinical');
-	  }
-	});
-});
-
-router.post('/business', (req, res) => {
-  var ejsname = req.body.name;
-  var ejsemail = req.body.email;
-  var ejssubject = req.body.subject;
-  var ejsmessage = req.body.message;
-
-  // console.log(req.body.name);
-	var mailOptions = {
-	  from: 'IT.Group@crconc.org',
-	  to: 'IT.Group@crconc.org',
-	  subject: 'Contact from '+ ejsname +'(about business)',
-	  text: 'name: '+ejsname + '\n' +'email: ' + ejsemail + '\n' + 'subject: ' + ejssubject + '\n' +'message: ' + ejsmessage
-	};
-	transporter.sendMail(mailOptions, function(error, info){
-	  if (error) {
-	    console.log(error);
-	  } else {
-	    console.log('Email sent: ' + info.response);
-	    res.render('services/business');
-	  }
-	});
-});
-
-
-
-
 
 module.exports = router;

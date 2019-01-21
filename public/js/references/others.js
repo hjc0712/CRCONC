@@ -23,7 +23,7 @@ let contents = { "tools" : `
   <hr />
   <ul><li><a target="_blank" href="https://www.cancer.gov/">NCI</a></li><li><a target="_blank" href="https://evs.nci.nih.gov/ftp1/CTCAE/About.html">CTCAE Version 5.0</a></li><li><a target="_blank" href="http://www.eortc.be/Services/Doc/RECIST.pdf">RECIST Article</a></li><li><a target="_blank" href="http://recist.eortc.org/">RECIST Website</a></li><li><a target="_blank" href="http://recist.eortc.org/recist-1-1-2/">RECIST 1.1</a></li><li><a target="_blank" href="http://recist.eortc.org/irecist/">iRECIST</a></li><li><a target="_blank" href="https://www.cancer.gov/types">Cancer Types</a></li><li><a target="_blank" href="https://www.cancer.gov/research/nci-role/cancer-centers">NCI-Designated Cancer Centers</a></li><li><a target="_blank" href="https://www.cancer.gov/grants-training">NCI Grants and Trainings</a></li></ul>
 `, "nccn": `
-  <h1 class="subtitle">NCNN</h1>
+  <h1 class="subtitle">NCCN</h1>
   <hr />
   <ul><li><a target="_blank" href="https://www.nccn.org/">NCCN </a></li><li><a target="_blank" href="https://www.nccn.org/professionals/physician_gls/default.aspx">NCCN Guidelines</a></li><li><a target="_blank" href="https://www.nccn.org/professionals/physician_gls/default.aspx#site">NCCN Guidelines by Cancer Sites</a></li></ul>
 `, "rmat": `

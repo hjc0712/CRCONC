@@ -1,13 +1,16 @@
-<% include ../partials/header %>
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/head %>
+  <link rel="stylesheet" href="/static/css/references/main.css">
+  <link rel="stylesheet" href="/static/css/references/ngo.css">
+<head>
 
-<link rel="stylesheet" href="/static/css/references/ngo.css">
+<body>
+  <% include ../partials/navbar %>
+  <%- include("./partials/hero", {title: "NGO"}) %>
 
-  <div class="jumbotron" id="hero" style="height: 450px">
-    <h1 id="title">NGO</h1>
-    <div class="gradient-mask"></div>
-  </div>
-
-  <div class="container" id="ngo">
+  <section class="container" id="ngo">
     <div class="row">
       <div class="col-sm-6">
         <div class="ngo-item">
@@ -56,7 +59,10 @@
         </div>
       </div>
     </div>
-  </div>
-
-<% include ../partials/footer %>
-<script src="/static/js/references/ngo.js"></script>
+  </section>
+  
+  <% include ../partials/footer %>
+  <% include ../partials/scripts %>
+  <script src="/static/js/references/ngo.js"></script>
+</body>
+</html>

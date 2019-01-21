@@ -8,7 +8,8 @@ const indexRoutes = require('./routes/index'),
   basicRoutes = require('./routes/basic'),
   serviceRoutes = require('./routes/services'),
   referenceRoutes = require('./routes/references'),
-  careerRoutes = require('./routes/careers');
+  careerRoutes = require('./routes/careers'),
+  fileRoutes = require('./routes/files');
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set('view engine', 'ejs');
@@ -21,6 +22,7 @@ app.use('/basic', basicRoutes);
 app.use('/services', serviceRoutes);
 app.use('/references', referenceRoutes);
 app.use('/careers', careerRoutes);
+app.use('/files', fileRoutes);
 
 app.listen(process.env.PORT || 3000, function() {
   console.log('The server has started.');

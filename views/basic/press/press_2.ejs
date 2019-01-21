@@ -1,13 +1,13 @@
-<title>Press_2</title>
-<link rel="stylesheet" type="text/css" href="/static/css/basic/press_1.css">
-<% include ../../partials/header%>
-  <section class="hero">
-    <div class="background-image" style="background-position: center; background-image: url(/static/img/index/cell-tech-3.jpg);"></div>
-    <div class="hero-content-area">
-        <h1>Our Press</h1>
-    </div>
-    <div class="gradient-mask"></div>
-  </section>
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../../partials/head %>
+  <link rel="stylesheet" href="/static/css/basic/main.css">
+  <link rel="stylesheet" type="text/css" href="/static/css/basic/press_1.css">
+</head>
+<body>
+  <% include ../../partials/navbar %>
+  <%- include("../partials/hero", {title: "Press Releases"}); %>
 
 <section class="announcement">
     <h1>FDA Grants TransThera Biosciences Approval to Proceed with the Clinical Development of TT-00420 in the U.S.</h1>
@@ -35,3 +35,4 @@
 
 
 <% include ../../partials/footer%>
+<% include ../../partials/scripts %>
